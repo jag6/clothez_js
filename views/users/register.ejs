@@ -1,0 +1,31 @@
+<%- include('../components/head') %>
+    <div class="form-container">
+        <form id="register-form" class="form">
+            <section><h1><span><i class="fa-solid fa-user-plus"></i></span>Create New Account</h1></section>
+            <div class="form-field">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" required>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" required>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>   
+                <small></small> 
+            </div>
+            <button type="submit" class="primary">REGISTER</button>    
+            <div>
+                <p>Already have an account?<p><a href="/users/login"><p>Log In<p></a>
+            </div>
+        </form>
+    </div>
+<%- include('../components/footer') %>

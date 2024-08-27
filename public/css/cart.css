@@ -1,0 +1,145 @@
+/*CART*/ 
+
+.cart-container {
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    max-width: 1440px;
+    padding: 2rem 5%;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.cart-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.cart-header h1 {
+    font-size: 32px;
+    line-height: 64px;
+}
+
+.cart-header h2 {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.cart-list-container{
+    padding: 1rem 2%;
+    list-style: none;
+}
+
+.cart-container h3 {
+    font-size: 22px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.cart-list-container li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: .1rem #c0c0c0 solid;
+}
+
+.item-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-details li {
+    border-bottom: 0 transparent solid;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    font-size: 18px;
+    line-height: 32px;
+    align-items: center;
+}
+
+.item-details img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.cart-list select {
+    width: 3rem;
+    height: auto;
+    padding: .25rem;
+}
+
+.delete-btn {
+    box-shadow: none;
+    background-color: #e5e5e5;
+    padding: .25rem .5rem;
+    border-radius: 10px;
+    margin-left: .5rem;
+    font-size: 14px;
+}
+
+.cart-action {
+    height: 11rem;
+    width: 25%;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    padding: 1rem 2%;
+}
+
+.cart-action section {
+    margin-bottom: 1rem;
+}
+
+.cart-action h2 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.cart-action a {
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 4px 0;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.cart-action a:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.cart-action a:first-of-type {
+    background-color: #FCCA3F;;
+}
+
+.cart-action a:last-of-type{
+    background-color: #F27430;
+    margin-top: .5rem;
+}
+
+
+@media only screen and (max-width: 900px) {   
+    .cart-list {
+        margin-right: 0%;
+    }
+
+    .cart-list, .cart-action {
+        width: 100%;
+    }
+
+    .cart-action {
+        margin-top: 3rem;
+    }
+}

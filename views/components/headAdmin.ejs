@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata First -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- meta_title -%> - Clothez</title>
+    <!-- CSS + Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/headerFooter.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/" type="image/x-icon">
+    <!-- Canonical URL-->
+    <link rel="canonical" href="https://clothezrfw.online">
+    <!-- Metadata -->
+    <meta property="og:locale" content="en_US"/>
+    <meta name="description" content="Your admin dashboard">
+    <!-- Twitter Metadata -->
+    <meta name="twitter:title" content="<%- meta_title -%>">
+    <meta name="twitter:description" content="Your admin dashboard">
+    <meta name="twitter:image" content="https://clothezrfw.online/images/woman-sunglasses.webp
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Other Social Media Metadata -->
+    <meta property="og:title" content="<%- meta_title -%>">
+    <meta property="og:description" content="Your admin dashboard">
+    <meta property="og:image" content="https://clothezrfw.online/images/woman-sunglasses.webp
+    <meta property="og:url" content="https://clothezrfw.online">
+    <meta property="og:site_name" content="Clothez">
+    <!-- Scripts -->
+    <script type="module" src="/scripts/main.js" defer></script>
+    <script type="module" src="/scripts/admin/admin.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body id="body">
+    <div class="overlay" id="loading-overlay">Loading...</div>
+    <div class="overlay" id="message-overlay"></div>
+    <%- include('../components/header') %>
+    <main>
+        <%- include('../components/sidebar') %>
